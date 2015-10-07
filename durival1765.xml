@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/Users/Claire/Dropbox/echange_2015/Durival/durival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>
+                <respStmt>
+                    <resp>édité et encodé en XML-TEI par</resp>
+                    <name>Claire Haquet</name>
+                    <name>Eric Nunes</name>
+                </respStmt>
+                <funder>Ville de Nancy</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Les Bibliothèques de Nancy</publisher>
+                <pubPlace>Nancy</pubPlace>
+                <date when="2016">2016</date>
+                <availability>
+                    <p>Licence ouverte Etalab</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>France</country>
+                        <repository>Bibliothèque municipale classée de Nancy</repository>
+                        <idno>ms. 863</idno>
+                        <altIdentifier>
+                            <idno>catalogue Favier 1315</idno>
+                        </altIdentifier>
+
+                    </msIdentifier>
+                    <msContents>
+                        <p><!--Description intellectuelle du manuscrit / dates / sujet--></p>
+                    </msContents>
+                    <physDesc>
+                        <p>Manuscrit autographe en 14 volumes etc.</p>
+                    </physDesc>
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>L'objectif du projet est de fournir une édition augmentée du Journal blabla</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization>
+                    <p><!--Décisions de transcription--></p>
+                </normalization>
+                <interpretation>
+                    <p>
+                        <interpGrp type="theme">
+                            <interp xml:id="METEO">météo<desc>Entrées concernant les conditions
+                                    météorologiques et leurs conséquences sur l'agriculture et la
+                                    vie quotidienne</desc></interp>
+                            <interp xml:id="ACA">Académie<desc>Entrées relatant les
+                                    séances ou rencontres des membres de l'Académie Royale des
+                                    Sciences, Arts et Belles-Lettres de Nancy</desc></interp>
+                            <interp xml:id="THEATRE">représentation théâtrale<desc>Entrées
+                                    concernant les représentations théâtrales données à Nancy et
+                                    devant le roi Stanislas</desc></interp>
+                            <interp xml:id="COUR">Stanislas et la Cour<desc>Entrées relatant la vie
+                                    du roi Stanislas et de sa cour, la plupart du temps à
+                                    Lunéville</desc></interp>
+                            <interp xml:id="VILLE">administration de la ville<desc>Entrées relatant
+                                    les événements du quotidien et la gestion de la ville de Nancy
+                                    par Nicolas Durival</desc></interp>
+                            <interp xml:id="BIO">éléments biographiques<desc>Entrées concernant des
+                                    événements de la vie personnelle de Durival et de sa
+                                    famille</desc></interp>
+                            <interp xml:id="ARMEE">armées<desc>Entrées relatant les mouvements et
+                                    exercices des régiments stationnés à Nancy et dans la
+                                    région</desc></interp>
+                            <interp xml:id="FETES">fêtes et cérémonies<desc>Entrées relatant les
+                                    différentes manifestations civiles ou
+                                religieuses</desc></interp>
+                        </interpGrp>
+                    </p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="year">
+                <p>Année 1765</p>
+                <div type="month">
+                    <p>Mois de janvier</p>
+                    <div type="day">
+                        <p><date when="1765-01-01">1<hi rend="superscript"> er</hi></date>. <seg
+                                xml:id="D1765010101" ana="#METEO">Le verglas d'hier a causé beaucoup
+                                d'accidens à <placeName ref="#NCY">Nancy</placeName>. Il en a été de
+                                même à <placeName>Lunéville</placeName>.</seg>
+                            <seg xml:id="D1765010102" type="#DOC" ana="#COUR">L'hotel de ville de
+                                Nancy aiant fait graver par <persName>Collin</persName> l'estampe de
+                                la construction du quartier roïal des casernes. Elle a été présentée
+                                ce matin au <rs ref="#STAN">Roy de Pologne</rs> à <placeName
+                                    ref="#LUN">Lunéville</placeName>. S<choice>
+                                    <abbr>.</abbr>
+                                    <expan>a</expan>
+                                </choice> M<choice>
+                                    <abbr>.</abbr>
+                                    <expan>ajesté</expan>
+                                </choice> en a été contente.</seg>
+                        </p>
+                    </div>
+                    <div type="day">
+                        <p><date when="1765-01-03">3</date>. <seg xml:id="D1765010301"
+                                ana="#THEATRE"><persName>Mlle Gronier</persName> a joué pour la
+                                première fois à <placeName>Nancy</placeName>. On l'a trouvée d'une
+                                figure charmante, froide dans <title>Zaïre</title>, mieux dans la
+                                comédie.</seg>
+                            <seg xml:id="D1765010302" ana="#COUR"> Jamais nouvel an n'a attiré tant
+                                de monde à Lunéville, comédies, bals, grand jeu, g.ds repas</seg>
+                            <seg xml:id="D1765010303" ana="#VILLE">J'ai vu une lettre de
+                                    <persName>M. Balligaud</persName> à sa mère, il a bien changé de
+                                ton et promet d'être un tout autre homme.</seg>
+                        </p>
+                    </div>
+                    <div type="day">
+                        <p><date when="1765-01-07">7-8</date>. <seg xml:id="D17650107" ana="#METEO"
+                                >Pluye par huit et 8 1/2 degrés de chaud.</seg>
+                        </p>
+                    </div>
+                    <div type="day">
+                        <p><date when="1765-01-09">9</date>. <seg xml:id="D1765010901" ana="#VILLE"
+                                >Résolu dans l'assemblée de l'hôtel de ville de <sic>suprimer</sic>
+                                la flèche du clocher de <placeName>S. Epvre</placeName> etc. On
+                                conservera le cordon de la lanterne, sur lequel sera établi un petit
+                                dôme pour servir de <sic>pié</sic> à la Croix.</seg></p>
+                        <p>
+                            <seg xml:id="D1765010902" ana="#ACA">Assemblée particulière de
+                                l'académie où étoient Mrs <persName>Thiébault</persName>,
+                                    <persName>de Solignac</persName>, <persName>du
+                                    Rouvrois</persName>, <persName>André</persName>,
+                                    <persName>Cupers</persName>, <persName>de Sivry</persName>,
+                                    <persName>de Tervenus</persName>, <persName>P. Husson</persName>
+                                et <persName>Durival l'ainé</persName>. On est convenu de lire
+                                demain, partie du discours sur la <title>Théogonie</title>, quelques
+                                morceaux de la traduction et du commentaire. Le <pb/><fw
+                                    place="top-center" type="head">Mois de Janvier 1765</fw>
+                                <fw place="top-right" type="pageNum">[70v]</fw>
+                                <!--fw à vérifier-->
+                                <title>discours sur le luxe</title>, qui a remporté l'autre prix ne
+                                s'est point trouvé. <persName>Le P. Simonin</persName>, jés<choice>
+                                    <abbr>.</abbr>
+                                    <expan>uite</expan>
+                                </choice> de <placeName><choice>
+                                        <orig>Pontamousson</orig>
+                                        <reg>Pont-à-Mousson</reg>
+                                    </choice></placeName>, en est l'auteur. C'est <persName>M.
+                                    Bergier</persName> de <placeName>Darney</placeName>, curé au
+                                diocèse de Besançon qui a traduit la <bibl><title>Théogonie</title>
+                                        d'<author>Hésiode</author></bibl>.</seg></p>
+                    </div>
+                    <div type="day">
+                        <p><date/></p>
+                    </div>
+                </div>
+                <!-- <p>fmgljrmoihjtbzmvnai <seg xml:id="D1766041401" ana="#METEO"
+                    >ogvntrioymhjy</seg></p> -->
+            </div>
+            <div/>
+        </body>
+        <back>
+            <div type="index">
+                <listPerson>
+                    <head>Index des noms de personnes</head>
+                    <person xml:id="STAN">
+                        <p>Leczszinki, Stanislas</p>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <head>Index des noms de lieux</head>
+                    <place xml:id="NCY">
+                        <p>Nancy</p>
+                    </place>
+                    <place xml:id="LUN">
+                        <p>château de Lunéville</p>
+                    </place>
+                </listPlace>
+            </div>
+        </back>
+    </text>
+</TEI>

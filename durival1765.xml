@@ -89,17 +89,16 @@
                 <div type="month">
                     <p>Mois de janvier</p>
                     <div type="day">
-                        <p><date when="1765-01-01">1<hi rend="superscript"> er</hi></date>.</p>
+                        <p><date when="1765-01-01">1<hi rend="superscript"> er</hi></date>.
                         <cb/>
-                        <p>
+                       <!-- ajout d'un  </cb>-->
                             <seg xml:id="D1765010101" ana="#METEO">Le verglas d'hier a causé
-                                beaucoup d'accidens à <placeName ref="#NCY">Nancy</placeName>. Il en
+                                beaucoup d'<sic>accidens</sic> à <placeName ref="#NCY">Nancy</placeName>. Il en
                                 a été de même à
                                 <placeName>Lunéville</placeName><!--<index><term>Lunéville</term></index>.--></seg>
                             <seg xml:id="D1765010102" type="#DOC" ana="#COUR">L'hotel de ville de
-                                Nancy aiant fait graver par <persName>Collin 
-                                </persName>l'estampe de
-                                la construction du quartier roïal des casernes. Elle a été présentée
+                                Nancy aiant fait graver par <persName>Collin </persName>l'estampe de
+                                la construction du quartier <sic>roïal</sic> des casernes. Elle a été présentée
                                 ce matin au <rs ref="#STAN">Roy de Pologne</rs>
                                 <!-- ou <rs type="person">Roy de Pologne<reg>Leczszinki, Stanislas</reg></rs>-->à
                                     <placeName ref="#LUN">Lunéville</placeName>. S<choice>
@@ -108,37 +107,45 @@
                                 </choice> M<choice>
                                     <abbr>.</abbr>
                                     <ex>ajesté</ex>
-                                </choice> 
+                                </choice>
                                 <!-- variante avec <expan> et <ex> -->
-                                <choice><expan><abbr>S.a.M.</abbr><ex>Sa Majesté</ex></expan></choice>
-                                <!-- pour les abbréviations, je propose comme ci dessus, plus conforme, et plus lisible -->en a été contente.</seg>
+                                <choice>
+                                    <expan><abbr>S.a.M.</abbr><ex>Sa Majesté</ex></expan>
+                                </choice>
+                                <!-- pour les abbréviations, je propose comme ci dessus, plus conforme, et plus lisible -->en
+                                a été contente.</seg>
                         </p>
                     </div>
-                 
+
                     <div type="day">
-                        <p><date when="1765-01-03">3</date>. <seg xml:id="D1765010301"
+                        <p><date when="1765-01-03">3</date>. <cb/>
+                            <seg xml:id="D1765010301"
                                 ana="#THEATRE"><persName>Mlle Gronier</persName> a joué pour la
                                 première fois à <placeName>Nancy</placeName>. On l'a trouvée d'une
                                 figure charmante, froide dans <title>Zaïre</title>, mieux dans la
                                 comédie.</seg>
                             <seg xml:id="D1765010302" ana="#COUR"> Jamais nouvel an n'a attiré tant
-                                de monde à Lunéville, comédies, bals, grand jeu, g.ds repas</seg>
+                                de monde à Lunéville, comédies, bals, grand jeu, <choice>
+                                    <expan><abbr>g.ds</abbr></expan>
+                                    <ex>grands</ex>
+                                </choice> repas</seg>
                             <seg xml:id="D1765010303" ana="#VILLE">J'ai vu une lettre de
                                     <persName>M. Balligaud</persName> à sa mère, il a bien changé de
                                 ton et promet d'être un tout autre homme.</seg>
                         </p>
                     </div>
                     <div type="day">
-                        <p><date when="1765-01-07">7-8</date>. <seg xml:id="D17650107" ana="#METEO"
+                        <p><date when="1765-01-07">7-8</date>. <cb/><seg xml:id="D17650107" ana="#METEO"
                                 >Pluye par huit et 8 1/2 degrés de chaud.</seg>
                         </p>
                     </div>
                     <div type="day">
-                        <p><date when="1765-01-09">9</date>. <seg xml:id="D1765010901" ana="#VILLE"
-                                >Résolu dans l'assemblée de l'hôtel de ville de <sic>suprimer</sic>
-                                la flèche du clocher de <placeName>S. Epvre</placeName> etc. On
-                                conservera le cordon de la lanterne, sur lequel sera établi un petit
-                                dôme pour servir de <sic>pié</sic> à la Croix.</seg></p>
+                        <p><date when="1765-01-09">9</date>. <cb/><seg xml:id="D1765010901" ana="#VILLE"
+                                >Résolu dans l'assemblée de <orgName>l'hôtel de ville </orgName><!-- ajout -->de
+                                    <sic>suprimer</sic> la flèche du clocher de <placeName>S.
+                                    Epvre</placeName> etc. On conservera le cordon de la lanterne,
+                                sur lequel sera établi un petit dôme pour servir de <sic>pié</sic> à
+                                la Croix.</seg></p>
                         <p>
                             <seg xml:id="D1765010902" ana="#ACA">Assemblée particulière de
                                 l'académie où étoient Mrs <persName>Thiébault</persName>,
@@ -171,8 +178,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- <p>fmgljrmoihjtbzmvnai <seg xml:id="D1766041401" ana="#METEO"
-                    >ogvntrioymhjy</seg></p> -->
+             
             </div>
             <div/>
         </body>

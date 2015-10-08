@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="file:/C:/Users/Claire/Dropbox/echange_2015/Durival/durival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="file:/home/eric/Documents/durival/durival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -55,9 +55,9 @@
                             <interp xml:id="METEO">météo<desc>Entrées concernant les conditions
                                     météorologiques et leurs conséquences sur l'agriculture et la
                                     vie quotidienne</desc></interp>
-                            <interp xml:id="ACA">Académie<desc>Entrées relatant les
-                                    séances ou rencontres des membres de l'Académie Royale des
-                                    Sciences, Arts et Belles-Lettres de Nancy</desc></interp>
+                            <interp xml:id="ACA">Académie<desc>Entrées relatant les séances ou
+                                    rencontres des membres de l'Académie Royale des Sciences, Arts
+                                    et Belles-Lettres de Nancy</desc></interp>
                             <interp xml:id="THEATRE">représentation théâtrale<desc>Entrées
                                     concernant les représentations théâtrales données à Nancy et
                                     devant le roi Stanislas</desc></interp>
@@ -89,23 +89,32 @@
                 <div type="month">
                     <p>Mois de janvier</p>
                     <div type="day">
-                        <p><date when="1765-01-01">1<hi rend="superscript"> er</hi></date>. <seg
-                                xml:id="D1765010101" ana="#METEO">Le verglas d'hier a causé beaucoup
-                                d'accidens à <placeName ref="#NCY">Nancy</placeName>. Il en a été de
-                                même à <placeName>Lunéville</placeName>.</seg>
+                        <p><date when="1765-01-01">1<hi rend="superscript"> er</hi></date>.</p>
+                        <cb/>
+                        <p>
+                            <seg xml:id="D1765010101" ana="#METEO">Le verglas d'hier a causé
+                                beaucoup d'accidens à <placeName ref="#NCY">Nancy</placeName>. Il en
+                                a été de même à
+                                <placeName>Lunéville</placeName><!--<index><term>Lunéville</term></index>.--></seg>
                             <seg xml:id="D1765010102" type="#DOC" ana="#COUR">L'hotel de ville de
-                                Nancy aiant fait graver par <persName>Collin</persName> l'estampe de
+                                Nancy aiant fait graver par <persName>Collin 
+                                </persName>l'estampe de
                                 la construction du quartier roïal des casernes. Elle a été présentée
-                                ce matin au <rs ref="#STAN">Roy de Pologne</rs> à <placeName
-                                    ref="#LUN">Lunéville</placeName>. S<choice>
+                                ce matin au <rs ref="#STAN">Roy de Pologne</rs>
+                                <!-- ou <rs type="person">Roy de Pologne<reg>Leczszinki, Stanislas</reg></rs>-->à
+                                    <placeName ref="#LUN">Lunéville</placeName>. S<choice>
                                     <abbr>.</abbr>
                                     <expan>a</expan>
                                 </choice> M<choice>
                                     <abbr>.</abbr>
-                                    <expan>ajesté</expan>
-                                </choice> en a été contente.</seg>
+                                    <ex>ajesté</ex>
+                                </choice> 
+                                <!-- variante avec <expan> et <ex> -->
+                                <choice><expan><abbr>S.a.M.</abbr><ex>Sa Majesté</ex></expan></choice>
+                                <!-- pour les abbréviations, je propose comme ci dessus, plus conforme, et plus lisible -->en a été contente.</seg>
                         </p>
                     </div>
+                 
                     <div type="day">
                         <p><date when="1765-01-03">3</date>. <seg xml:id="D1765010301"
                                 ana="#THEATRE"><persName>Mlle Gronier</persName> a joué pour la
@@ -153,10 +162,13 @@
                                     </choice></placeName>, en est l'auteur. C'est <persName>M.
                                     Bergier</persName> de <placeName>Darney</placeName>, curé au
                                 diocèse de Besançon qui a traduit la <bibl><title>Théogonie</title>
-                                        d'<author>Hésiode</author></bibl>.</seg></p>
+                                        d'<author>Hésiode</author></bibl>.</seg>
+                        </p>
                     </div>
                     <div type="day">
-                        <p><date/></p>
+                        <p>
+                            <date/>
+                        </p>
                     </div>
                 </div>
                 <!-- <p>fmgljrmoihjtbzmvnai <seg xml:id="D1766041401" ana="#METEO"

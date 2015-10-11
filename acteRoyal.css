@@ -1,0 +1,179 @@
+﻿/*
+  Titre      : Feuille de style CSS très simple pour l'habillage de la version HTML de l'édition d'un acte royal de 1763
+  Auteur     : Florence Clavaud (Ecole nationale des chartes)
+ Audience     : participants à la formation sur TEI donnée an mars 2011 à l'Ecole des chartes
+Conditions d'utilisation : licence Creative Commons paternité-pas d'utilisation commerciale- etc.
+Date      : mars 2011
+   */
+
+/* 
+  rouge: #A73136;
+  gris clair: #E8E8E8;
+  gris foncé: #4A4A4A;*/
+ 
+body {
+    font-family:Arial, Verdana, sans-serif;
+    font-size:12px;
+    padding:0;
+    margin:0;
+}
+
+/* les div de macrostructure */
+
+#gauche {
+   /* width:30%; */
+   width:60%;
+    height:100%;
+    overflow: auto;
+    position:fixed;
+    margin:0;
+
+}
+
+#droite {
+
+    float:right;
+    width:39%;
+    margin-left:60%;
+    padding-left:2em;
+    padding-right:1em;
+}
+
+/* la colonne de gauche */
+
+#header {
+
+    padding:1ex;
+    font-size:115%;
+}
+
+.title {
+font-size:120%;
+    font-weight:bold;
+    color:#A73136;
+}
+
+#images img {
+     padding:1ex;
+    
+}
+
+/* colonne de droite */
+/* pour la table des matières */
+#tdm {
+    font-size:1.2em;
+    padding:1ex;
+    color:#444444;
+    background:white;
+    
+}
+
+#tdm ul {
+    list-style-type:none;
+}
+li {
+     
+}
+
+
+#tdm a:link {
+    color:#4A4A4A;
+    text-decoration:none;
+    display:block;
+    border:none;
+}
+
+#tdm a:visited {
+    color:#4A4A4A;
+    text-decoration:none;
+    display:block;
+     
+}
+#tdm a:hover {
+    color:#A73136;
+    font-weight:bold;
+    background:#FFFFFF;
+    text-decoration:none;
+    border-left:1px #CCCCCC solid;
+}
+
+#tdm a:active {
+    color:#4A4A4A;
+    text-decoration:none;
+    display:block;
+   
+    border-left:1px #CCCCCC solid;
+    
+}
+
+
+#metadonnees {
+   padding:1ex; 
+    
+}
+
+#transcription {
+    font-size:115%;
+    line-height:1.5em;
+     padding:1ex;
+}
+#notes {
+    padding:1ex;
+    font-size:100%;
+    line-height:1.2em;
+    
+}
+
+#index {
+    padding-right:1em;
+    padding-left:1em;
+    margin-right:2em;
+}
+p {
+    text-align:justify;
+    margin-top:1ex;
+    margin-bottom:1em;
+}
+
+
+.msIdentifier {
+    font-weight:bold;
+}
+.msContents {
+    font-style:italic;
+    
+}
+
+.req {
+    font-style:normal;
+}
+.ord, .sig {
+    font-style:italic;
+    
+}
+
+.del {
+    text-decoration:line-through;
+    
+}
+
+
+
+h2 {
+    font-size:115%;
+    font-weight:bold;
+    color:#A73136;
+}
+
+h3 {
+    font-size:110%;
+    font-weight:bold;
+    color:#4A4A4A;
+}
+
+
+
+
+.entree {
+    font-weight:bold;
+}
